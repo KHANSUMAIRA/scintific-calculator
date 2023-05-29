@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="./app.js"></script>
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="container d-flex justify-contant-center align-items-center w-50" style="height: 100vh;">
+    <table class="table table-warning table-striped ">
+      <thead>
+        <tr>
+          <th colspan="5"><input id="result" class="form-control" type="text" class="w-100" name="" id=""></th>
+
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr>
+          <td><button class="btlight w-100 text-center" onclick="getNum('Math.LN2')">log2</button></td>
+          <td><button class="btlight w-100 text-center" onclick="getNum('Math.round')">round</button></td>
+          <td><button class="btlight w-100 text-center" onclick="getNum('Math.pow')">^</button></td>
+          <td><button class="btlight w-100 text-center" onclick="getNum('Math.LN10')">log10</button></td>
+          <td><button class="btlight w-100 text-center" onclick="getNum('Math.max')">max</button></td>
+        </tr>
+        <tr>
+            <td><button class="btlight w-100 text-center" onclick="getNum('Math.asinh')">sinh</button></td>
+            <td><button class="btlight w-100 text-center" onclick="getNum('Math.acosh')">cosh</button></td>
+            <td><button class="btlight w-100 text-center" onclick="getNum('Math.atanh')">tanh</button></td>
+            <td><button class="btlight w-100 text-center" onclick="getNum('Math.hypot')">hyp</button></td>
+            <td><button class="btlight w-100 text-center" onclick="getNum('Math.CUB')">x3</button></td>
+          </tr>
+        <tr>
+          <td><button class="btlight w-100 text-center" onclick="getNum('Math.&PI')">pi</button></td>
+          <td><button class="btlight w-100 text-center" onclick="getNum('Math.cos')">cos</button></td>
+          <td><button class="btlight w-100 text-center" onclick="getNum('Math.sin')">sin</button></td>
+          <td><button class="btlight w-100 text-center" onclick="getNum('Math.tan')">tan</button></td>
+          <td><button class="btlight w-100 text-center" onclick="getNum('Math.M+')">M+</button></td>
+        </tr>
+        <tr>
+          <td><button class="btlight w-100 text-center" onclick="getNum('&#40;')">&#40</button></td>
+          <td><button class="btlight w-100 text-center" onclick="getNum('&#41;')">&#41</button></td>
+          <td><button class="btlight w-100 text-center" onclick="getNum('%')">%</button></td>
+          <td><button class="btlight w-100 text-center" onclick="removeNum()">DEL</button></td>
+          <td><button class="btdanger w-100 text-center" onclick="clearResult()">AC</button></td>
+         
+        </tr>
+        <tr>
+          <td><button class="btlight w-100 text-center" onclick="getNum('7')">7</button></td>
+          <td><button class="btlight w-100 text-center" onclick="getNum('8')">8</button></td>
+          <td><button class="btlight w-100 text-center" onclick="getNum('9')">9</button></td>
+          <td><button class="btlight w-100 text-center" onclick="getNum('*')">*</button></td>
+          <td><button class="btlight w-100 text-center" onclick="getNum('/')">/</button></td>
+
+
+        </tr>
+        <tr>
+          <td><button class="btlight w-100 text-center" onclick="getNum('4')">4</button></td>
+          <td><button class="btlight w-100 text-center" onclick="getNum('5')">5</button></td>
+          <td><button class="btlight w-100 text-center" onclick="getNum('6')">6</button></td>
+          <td><button class="btlight w-100 text-center" onclick="getNum('-')">-</button></td>
+          <td><button class="btlight w-100 text-center" onclick="getNum('M-')">M-</button></td>
+
+        </tr>
+        <tr>
+          <td><button class="btlight w-100 text-center" onclick="getNum('1')">1</button></td>
+          <td><button class="btlight w-100 text-center" onclick="getNum('2')">2</button></td>
+          <td><button class="btlight w-100 text-center" onclick="getNum('3')">3</button></td>
+          <td><button class="btlight w-100 text-center" onclick="getNum('+')">+</button></td>
+          <td><button class="btlight w-100 text-center" onclick="getNum('Math.E')">E</button></td>
+
+        </tr>
+        <tr>
+          <td><button class="btlight w-100 text-center" onclick="getNum('.')">.</button></td>
+          <td><button class="btlight w-100 text-center" onclick="getNum('0')">0</button></td>
+          <td><button class="btlight w-100 text-center" onclick="getResult()">=</button></td>
+          <td><button class="btlight w-100 text-center">RND</button></td>
+            <td><button class="btlight w-100 text-center" onclick="getResult()">Ans</button></td>
+
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+
+    
+      </script>
+
+  
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
